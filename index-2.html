@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Account - Client-area - EasyGCO</title>
+    <link rel="icon" href="asset/img/favicon.png">
+    <link rel="shortcut icon" href="asset/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="asset/customize/css/style.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="asset/fonts/css/all.min.css">
+</head>
+
+<body>
+    <div class="easy-wrapper">
+        <!-- Sidebar  -->
+        <nav class="easy-sidebar">
+            <div class="easy-sidebar-header">
+                <div class="easy-logo">
+                    <img src="asset/img/logo.png" alt="" srcset="">
+                </div>
+            </div>
+
+            <div class="easy-sidebar-user">
+                <div class="easy-user-image">
+                    <img src="asset/img/user.jpg" alt="" srcset="">
+                </div>
+                <div class="easy-username">
+                    <h3>User name</h3>
+                    <h6>Manager</h6>
+                </div>
+            </div>
+
+            <ul class="list-unstyled">
+
+                <li class="active easy-main-item">
+                    <a href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span>Welcome</span>
+                    </a>
+                </li>
+                <li class="easy-main-item">
+                    <a href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <span>Payment</span>
+                    </a>
+                </li>
+                <li class="easy-main-item">
+                    <a href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <span>Transactions</span>
+                    </a>
+                </li>
+                <li class="easy-main-item">
+                    <a href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <span>Payments API</span>
+                    </a>
+                </li>
+                <li class="easy-main-item nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <span>Submenu links</span>
+                    </a>
+                    <ul class="submenu collapse">
+                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                    </ul>
+                </li>
+                <li class="easy-main-item">
+                    <a href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-cart-shopping"></i>
+                        </div>
+                        <span>Purchases</span>
+                    </a>
+                </li>
+                <li class="easy-main-item">
+                    <a href="#">
+                        <div class="easy-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <span>Tickets</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div class="easy-content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <button class="navbar-toggler btn" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse easy-navbar-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown dropdown-menu-right ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    AED
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">USD</a>
+                                    <a class="dropdown-item" href="#">AED</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-menu-right ">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    User name
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">My Account</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="easy-container">
+                <div class="card h-100">
+                    <div class="card-header text-center">
+                        <div class="row row-cols-1">
+                            <div class="col-4">
+                                <a href="#" class="easy-card-links">
+                                    Withdraw Balance
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="easy-card-links">
+                                    Recharge Balance
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="easy-card-links">
+                                    Redeem Points
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center row-cols-1 row-cols-md-5 g-3">
+                            <div class="col">
+                                <a href="">
+                                    <div class="card text-white bg-info easy-card-2">
+                                        <div class="card-header">Power</div>
+                                        <div class="card-body">
+                                            <h3 class="card-text">0</h3>
+                                            <div class="easy-card-icon">
+                                                <i class="fa fa-coins"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card text-white bg-success easy-card-2">
+                                        <div class="card-header">Balance</div>
+                                        <div class="card-body">
+                                            <h3 class="card-text">0 AED</h3>
+                                            <div class="easy-card-icon">
+                                                <i class="fa fa-money-bill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card text-white bg-danger easy-card-2">
+                                        <div class="card-header">Hold</div>
+                                        <div class="card-body">
+                                            <h3 class="card-text">0 AED</h3>
+                                            <div class="easy-card-icon">
+                                                <i class="fa fa-clock"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card text-white bg-dark easy-card-2">
+                                        <div class="card-body">
+                                            <h3>October 2022</h3>
+                                            <p>Received</p>
+
+                                            <h3>0.00 AED</h3>
+                                            <p>0 AED Last Month</p>
+                                            <div class="easy-card-icon">
+                                                <i class="fa fa-receipt"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card text-black bg-light easy-card-2">
+                                        <div class="card-body">
+                                            <h3>October 2022</h3>
+                                            <p>Send</p>
+
+                                            <h3>0.00 AED</h3>
+                                            <p>0 AED Last Month</p>
+                                            <div class="easy-card-icon">
+                                                <i class="fa fa-share-nodes"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col-sm-8">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Recent
+                                            Charts </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#Test1" class="nav-link easy-chart-link active" data-bs-toggle="tab">7
+                                            Days</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#Test2" class="nav-link easy-chart-link" data-bs-toggle="tab">30
+                                            Days</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#Test3" class="nav-link easy-chart-link" data-bs-toggle="tab">12
+                                            Months</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-pane fade show active" id="Test1">
+                                    <canvas id="myChart" style="width:100%"></canvas>
+                                </div>
+                                <div class="tab-pane fade" id="Test2">
+                                    <canvas id="myChart2" style="width:100%"></canvas>
+                                </div>
+                                <div class="tab-pane fade" id="Test3">
+                                    <canvas id="myChart3" style="width:100%"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card h-100">
+                            <div class="card-header easy-h-50 d-flex align-items-center">
+                                <a href="#">
+                                    Transactions
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h6>All The Time</h6>
+                                <h5>
+                                    <i class="fas fa-caret-down text-success "></i>
+                                    <span>0.00 AED</span>
+                                    <span class="mx-2">|</span>
+                                    <span>0.00 AED</span>
+                                    <i class="fas fa-caret-up text-danger"></i>
+                                </h5>
+                                <hr>
+                                <h6>Today ( Tue, 18 October 2022 )</h6>
+                                <h5>
+                                    <i class="fas fa-caret-down text-success"></i>
+                                    <span>0.00 AED</span>
+                                    <span class="mx-2">|</span>
+                                    <span>0.00 AED</span>
+                                    <i class="fas fa-caret-up text-danger"></i>
+                                </h5>
+                                <hr>
+                                <h6>Yesterday ( Mon, 17 October 2022 )</h6>
+                                <h5>
+                                    <i class="fas fa-caret-down text-success"></i>
+                                    <span>0.00 AED</span>
+                                    <span class="mx-2">|</span>
+                                    <span>0.00 AED</span>
+                                    <i class="fas fa-caret-up text-danger"></i>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="easy-footer w-100">
+                Copyright © 2022 <a href="">EasyGCO</a>
+            </div>
+        </div>
+    </div>
+    <!-- Chart Js -->
+    <!-- <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <!-- Bootstrap bundle JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- script JS -->
+    <script src="asset/customize/js/script.js"></script>
+</body>
+
+</html>

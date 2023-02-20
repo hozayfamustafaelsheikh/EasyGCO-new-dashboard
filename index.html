@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Account - Client-area - EasyGCO</title>
+  <link rel="icon" href="asset/img/favicon.png">
+  <link rel="shortcut icon" href="asset/img/favicon.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="asset/customize/css/style.css" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="asset/fonts/css/all.min.css">
+</head>
+
+<body>
+  <div class="easy-wrapper">
+    <!-- Sidebar  -->
+    <nav class="easy-sidebar">
+      <div class="easy-sidebar-header">
+        <div class="easy-logo">
+          <img src="asset/img/logo.png" alt="" srcset="">
+        </div>
+      </div>
+
+      <div class="easy-sidebar-user">
+        <div class="easy-user-image">
+          <img src="asset/img/user.jpg" alt="" srcset="">
+        </div>
+        <div class="easy-username">
+          <h3>User name</h3>
+          <h6>Manager</h6>
+        </div>
+      </div>
+
+      <ul class="list-unstyled">
+
+        <li class="active easy-main-item">
+          <a href="#">
+            <div class="easy-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <span>Welcome</span>
+          </a>
+        </li>
+        <li class="easy-main-item">
+          <a href="#">
+            <div class="easy-icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <span>Payment</span>
+          </a>
+        </li>
+        <li class="easy-main-item">
+          <a href="#">
+            <div class="easy-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <span>Transactions</span>
+          </a>
+        </li>
+        <li class="easy-main-item">
+          <a href="#">
+            <div class="easy-icon">
+              <i class="fas fa-key"></i>
+            </div>
+            <span>Payments API</span>
+          </a>
+        </li>
+        <li class="easy-main-item nav-item has-submenu">
+          <a class="nav-link" href="#">
+            <div class="easy-icon">
+              <i class="fas fa-list"></i>
+            </div>
+            <span>Submenu links</span>
+          </a>
+          <ul class="submenu collapse">
+            <li><a class="nav-link" href="#">Submenu item 1 </a></li>
+            <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+            <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+          </ul>
+        </li>
+        <li class="easy-main-item">
+          <a href="#">
+            <div class="easy-icon">
+              <i class="fas fa-cart-shopping"></i>
+            </div>
+            <span>Purchases</span>
+          </a>
+        </li>
+        <li class="easy-main-item">
+          <a href="#">
+            <div class="easy-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <span>Tickets</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div class="easy-content">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a id="sidebarCollapse" class="btn">
+            <i class="fa fa-bars"></i>
+          </a>
+          <button class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse easy-navbar-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown dropdown-menu-right ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  AED
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">USD</a>
+                  <a class="dropdown-item" href="#">AED</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-menu-right ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  User name
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">My Account</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="easy-container">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col-md-2 easy-border-right">
+                <div class="easy-profile-user">
+                  <div class="easy-profile-image">
+                    <img src="asset/img/user.jpg" alt="" srcset="">
+                  </div>
+
+                </div>
+                <hr>
+                <ul class="easy-profile-links">
+                  <li>
+                    <a href="#"><i class="fas fa-key"></i>API Keys</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-skating"></i>Activity</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-laptop"></i>Devices</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-clock-rotate-left"></i>Sessions</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-envelope"></i>Messages</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-id-card"></i>Documents</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-file-export"></i>Requests</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10 easy-profile-page">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <i class="fas fa-user"></i> Account
+                      </div>
+                      <div class="card-body">
+                        <div class="row">
+                          <label class="col-4"> Username: </label>
+                          <div class="col-8"> hozayfa93 </div>
+                        </div>
+                        <div class="row mt-1">
+                          <label class="col-4"> Email: </label>
+                          <div class="col-8"> <a href="#"> hozayfa.elsheikh@gmail.com</a> </div>
+                        </div>
+                        <div class="row mt-1">
+                          <label class="col-4"> Phone: </label>
+                          <div class="col-8"> <a href="#"> +971523796190</a> </div>
+                        </div>
+                        <div class="row mt-1">
+                          <label class="col-4"> Registration: </label>
+                          <div class="col-8"> 2022-10-16 20:25:52 </div>
+                        </div>
+                        <div class="row mt-1">
+                          <label class="col-4"> Last Access: </label>
+                          <div class="col-8"> 2022-10-17 18:21:16 </div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Firstname:</label>
+                          <div class="col-8">Hozayfa</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Lastname:</label>
+                          <div class="col-8">Elsheikh</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Birthdate:</label>
+                          <div class="col-8">1993-11-24</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Business:</label>
+                          <div class="col-8">Mobile Services</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Company:</label>
+                          <div class="col-8">Testing</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Business Details:</label>
+                          <div class="col-8">Testing account for testing only </div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Website:</label>
+                          <div class="col-8">easygco.com</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Country:</label>
+                          <div class="col-8">United Arab Emirates</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">State:</label>
+                          <div class="col-8">Dubai</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">City:</label>
+                          <div class="col-8">Dubai</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Address:</label>
+                          <div class="col-8">Dubai Dubai</div>
+                        </div>
+
+                        <div class="row mb-1">
+                          <label class="col-4">Zip code:</label>
+                          <div class="col-8">0000</div>
+                        </div>
+                      </div>
+                      <div class="card-footer">
+                        <div class="row mb-1 g-1">
+                          <div class="col-4">
+                            <button class="btn btn-danger w-100 easy-btn easy-btn-font ">
+                              <i class="fas fa-envelope"></i> Email
+                            </button>
+                          </div>
+                          <div class="col-4">
+                            <button class="btn btn-danger w-100 easy-btn easy-btn-font">
+                              <i class="fas fa-mobile"></i> Phone
+                            </button>
+                          </div>
+                          <div class="col-4">
+                            <button class="btn btn-danger w-100 easy-btn easy-btn-font">
+                              <i class="fas fa-user"></i> Username
+                            </button>
+                          </div>
+                          <div class="col-12">
+                            <button class="btn btn-danger w-100 easy-btn">
+                              <i class="fas fa-edit"></i> Modify Profile Information
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card easy-card">
+                          <div class="card-header">
+                            <i class="fas fa-users"></i> Sub Accounts
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">
+                              Sub-accounts are users who access access your client-area to view your transactions and
+                              payments ( e.g. your team members, employees .. etc )
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <button class="btn btn-danger w-100 easy-btn">
+                              <i class="fas fa-users"></i> Manage Sub-accounts
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card easy-card">
+                          <div class="card-header">
+                            <i class="fas fa-key"></i> Password
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">
+                              Keep your account secure by choosing a strong password - We don't save your password as it
+                              - we encrypt passwords using one-way algorithm that is impossible to decrypt.
+                            </p>
+                            <p class="card-text">
+                              <b> Last Modified: </b> 2022-10-16 20:25:52
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <button class="btn btn-danger w-100 easy-btn">
+                              <i class="fas fa-key"></i> Change Password
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card easy-card">
+                          <div class="card-header">
+                            <i class="fas fa-question "></i> Security Questions
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">
+                              Your security questions help us to verify your identity while contacting us via live-chat
+                              or phone.
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <button class="btn btn-danger w-100 easy-btn">
+                              <i class="fas fa-question "></i> Security Questions
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card easy-card">
+                          <div class="card-header">
+                            <i class="fas fa-lock "></i> Two-Factor Authentication
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">
+                              Enable Two-Factor authentication via Applications such as Google Authenticator and Free
+                              OTP
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <button class="btn btn-danger w-100 easy-btn">
+                              <i class="fas fa-unlock  "></i> Enable 2FA
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="mt-4 easy-profile-tabs">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a href="#Test1" class="nav-link active" data-bs-toggle="tab">Test1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#Test2" class="nav-link" data-bs-toggle="tab">Test2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#Test3" class="nav-link" data-bs-toggle="tab">Test3</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="Test1">
+                      <h4 class="mt-2">Test1 tab content</h4>
+                    </div>
+                    <div class="tab-pane fade" id="Test2">
+                      <h4 class="mt-2">Test2 tab content</h4>
+                    </div>
+                    <div class="tab-pane fade" id="Test3">
+                      <h4 class="mt-2">Test3 tab content</h4>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="easy-footer w-100">
+        Copyright © 2022 <a href="">EasyGCO</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <!-- Bootstrap bundle JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+  <!-- JQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- script JS -->
+  <script src="asset/customize/js/script.js"></script>
+</body>
+
+</html>

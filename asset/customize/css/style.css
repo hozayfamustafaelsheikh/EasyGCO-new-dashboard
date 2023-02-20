@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* ---------------- Root ---------------- */
+:root {
+  --red: #e6001e;
+  --black: #171717;
+  --white: #ffffff;
+  --grey: #cccccc;
+}
+
+/* ---------------- Reset CSS ---------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.easy-border-right {
+  border-right: 1px solid #c9c9c9;
+}
+
+.easy-h-50 {
+  height: 50px;
+}
+
+/* ---------------- Easy Style ---------------- */
+
+.easy-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.easy-navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.easy-navbar-menu ul li a.nav-link {
+  color: var(--white);
+}
+
+.tab-pane.fade {
+  display: none;
+}
+
+.tab-pane.fade.active.show {
+  display: block;
+}
+
+
+/* ---------------- Sidebar ---------------- */
+
+.easy-sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background-image: linear-gradient(to bottom, var(--black) 75%, var(--red));
+  color: #fff;
+  transition: all 0.5s;
+  border-radius: 0 0 20px 20px;
+}
+
+.easy-sidebar.active {
+  min-width: 80px;
+  max-width: 80px;
+  text-align: center;
+}
+
+.easy-sidebar.active .easy-sidebar-header h3 {
+  display: none;
+  transition: all 0.5s;
+}
+
+.easy-sidebar.active .easy-sidebar-header strong {
+  display: block;
+  transition: all 0.5s;
+}
+
+.easy-sidebar.active .easy-sidebar-user .easy-user-image {
+  width: 30px;
+  height: 30px;
+}
+
+.easy-sidebar.active .easy-sidebar-user h3 {
+  font-size: 8px;
+}
+
+.easy-sidebar.active .easy-sidebar-user h6 {
+  font-size: 6px;
+}
+
+.easy-sidebar .easy-sidebar-user {
+  padding: 15px;
+  text-align: center;
+}
+
+.easy-sidebar .easy-sidebar-user .easy-user-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.easy-sidebar .easy-sidebar-user .easy-username {
+  margin-top: 15px;
+}
+
+.easy-sidebar .easy-sidebar-user .easy-user-image img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.easy-sidebar .easy-sidebar-user h3 {
+  font-size: 14px;
+}
+
+.easy-sidebar .easy-sidebar-user h6 {
+  font-size: 12px;
+}
+
+.easy-sidebar ul li {
+  margin-left: 10px;
+}
+
+.easy-sidebar ul li .easy-icon {
+  display: inline-block;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.easy-sidebar.active ul li a {
+  padding: 17px 16px;
+  line-height: 15px;
+}
+
+.easy-sidebar.active ul li a span {
+  display: none !important;
+  transition: all 0.5s;
+}
+
+.easy-sidebar.active ul li a i {
+  margin-right: 0;
+  display: block;
+}
+
+.easy-sidebar .easy-sidebar-header {
+  padding: 20px;
+}
+
+.easy-sidebar.active .easy-sidebar-header .easy-logo {
+  width: 100%;
+}
+
+.easy-sidebar .easy-sidebar-header .easy-logo {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.easy-sidebar .easy-sidebar-header .easy-logo img {
+  width: 100%;
+}
+
+.easy-sidebar .easy-sidebar-header strong {
+  display: none;
+}
+
+.easy-sidebar ul.components {
+  padding: 20px 0;
+}
+
+.easy-sidebar ul li.easy-main-item a:hover::before,
+.easy-sidebar ul li.easy-main-item.active a::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  top: -50px;
+  box-shadow: 35px 27px 0 8px #fff;
+  pointer-events: none;
+}
+
+.easy-sidebar ul li.easy-main-item a:hover::after,
+.easy-sidebar ul li.easy-main-item.active a::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  bottom: -50px;
+  box-shadow: 25px -19px 0 -2px #fff;
+  pointer-events: none;
+}
+
+/* .submenu li a:hover::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: transparent;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  top: -50px;
+  box-shadow: 35px 27px 0 8px #fff;
+  pointer-events: none;
+}
+
+.submenu li a::after {
+  content: '' !important;
+  height: unset !important;
+  width: unset !important;
+} */
+
+.easy-sidebar ul li {
+  position: relative;
+}
+
+.easy-sidebar ul li a {
+  position: relative;
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  color: #fff;
+  border-radius: 30px 0 0 30px;
+  height: 60px;
+  line-height: 43px;
+  font-size: 16px;
+}
+
+.easy-sidebar ul li a span {
+  font-size: 16px;
+}
+
+.easy-sidebar ul li a:hover {
+  color: var(--red);
+  background: #fff;
+}
+
+.easy-sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.easy-sidebar ul li.active>a {
+  color: var(--red);
+  background: #fff;
+}
+
+/* ---------------- Content ---------------- */
+.easy-chart-link,
+.easy-chart-link:hover,
+.easy-chart-link:active {
+  color: var(--red);
+}
+
+
+.easy-content {
+  position: relative;
+  width: 100%;
+  /* padding: 0 0 0 20px; */
+  min-height: 100vh;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.easy-content nav {
+  background-image: linear-gradient(to right, var(--black) 75%, var(--red)) !important;
+  height: 65px;
+  margin-bottom: 15px;
+}
+
+.easy-content nav .btn {
+  color: var(--white);
+  font-size: 23px;
+}
+
+.easy-content nav .btn:hover {
+  color: var(--white) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.easy-content nav .btn:active {
+  color: var(--white) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.easy-content nav .btn:focus {
+  color: var(--white) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.easy-container {
+  padding: 0 15px;
+}
+
+/* ---------------- Profile ----------------------- */
+
+.easy-btn {
+  background-color: var(--grey);
+  color: var(--black);
+  border-color: var(--grey);
+}
+
+.easy-profile-image {
+  width: 100%;
+  /* height: 245px; */
+}
+
+.easy-profile-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.easy-profile-links {
+  padding-left: 0 !important;
+}
+
+.easy-profile-links li {
+  margin-bottom: 10px;
+}
+
+.easy-profile-links li a {
+  text-decoration: none;
+  color: var(--red);
+  font-size: 14px;
+}
+
+.easy-profile-links li a i {
+  margin-right: 10px;
+}
+
+.easy-profile-page {
+  font-size: 13px;
+}
+
+.easy-profile-tabs ul li a {
+  color: var(--red);
+}
+
+.easy-profile-tabs ul li a:hover {
+  color: var(--red);
+}
+
+.card-header {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.easy-card-info {
+  height: 557px;
+}
+
+.easy-card {
+  height: 273px;
+}
+
+.easy-card-2 {
+  height: 173px;
+  position: relative;
+}
+
+
+.easy-card-icon {
+  position: absolute;
+  bottom: 0;
+  right: 12px;
+  font-size: 3rem;
+  opacity: 0.2;
+}
+
+.easy-card-2:hover .easy-card-icon {
+  font-size: 4rem;
+}
+
+.easy-card-2 p {
+  font-size: 13px;
+}
+
+.easy-card-links {
+  transition: all 0.5s;
+}
+
+.easy-card-links:hover {
+  text-decoration: overline;
+}
+
+/* ----------- footer ----------------------*/
+
+.easy-footer {
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  padding: 15px;
+}
+
+
+/* ---------------- media Queries ---------------- */
+
+@media (max-width: 768px) {
+  .nav-tabs .nav-link {
+    font-size: 9px;
+  }
+
+  .easy-container {
+    margin-bottom: 55px;
+  }
+
+  .easy-border-right {
+    border-right: none;
+  }
+
+  .easy-btn-font {
+    font-size: 11px;
+  }
+
+  .easy-sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+    margin-left: -80px !important;
+  }
+
+  .easy-sidebar.active {
+    margin-left: 0 !important;
+  }
+
+  .easy-sidebar .easy-sidebar-header h3 {
+    display: none;
+  }
+
+  .easy-sidebar .easy-sidebar-header strong {
+    display: block;
+  }
+
+  .easy-sidebar .easy-sidebar-user .easy-user-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .easy-sidebar ul li a {
+    padding: 20px 10px;
+  }
+
+  .easy-sidebar ul li a span {
+    font-size: 0.85em;
+    display: none;
+  }
+
+  .easy-sidebar ul li a i {
+    margin-right: 0;
+    display: block;
+  }
+
+  .easy-sidebar ul ul a {
+    padding: 10px !important;
+  }
+
+  .easy-sidebar ul li a i {
+    font-size: 1.3em;
+  }
+
+  .easy-sidebar {
+    margin-left: 0;
+  }
+
+  .easy-sidebarCollapse span {
+    display: none;
+  }
+
+  .easy-navbar-menu.show {
+    background-image: linear-gradient(to right, var(--black) 75%, var(--red)) !important;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+
+}
